@@ -8,12 +8,24 @@ window.onscroll = function () {
 	}
 };
 
-const navLinks = document.querySelectorAll(".nav-link");
+const sections = document.querySelectorAll("section");
+const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-navLinks.forEach((link) => {
-	link.addEventListener("click", () => {
-		navLinks.forEach((navLink) => navLink.classList.remove("active"));
-		link.classList.add("active");
+window.addEventListener("scroll", () => {
+	let current = "";
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.clientHeight;
+		if (pageYOffset >= sectionTop - sectionHeight / 3) {
+			current = section.getAttribute("id");
+		}
+	});
+
+	navbarLinks.forEach((link) => {
+		link.classList.remove("active");
+		if (link.getAttribute("href") === `#${current}`) {
+			link.classList.add("active");
+		}
 	});
 });
 
