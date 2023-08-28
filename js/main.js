@@ -8,6 +8,7 @@ window.onscroll = function () {
 	}
 };
 
+// navbar nav menu otomatis
 const sections = document.querySelectorAll("section");
 const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
 

@@ -35,6 +35,7 @@ body{
 
 h1,h2,h3,h4{
 	font-weight: var(--font-w-700);
+	color: var(--text-color);
 }
 
 h1{
@@ -50,7 +51,7 @@ h3{
 }
 
 p{
-	font-size: var(--font-s-18);
+	font-size: var(--font-s-16);
 	font-weight: var(--font-w-500);
 	color: var(--text-color2);
 }
@@ -129,18 +130,6 @@ a{
 	height: 100vh;
 }
 
-.hero h1 {
-	font-size: 66px;
-	font-weight: var(--font-w-700);
-	color: var(--text-color);
-}
-
-.hero p{
-	font-size: var(--font-s-16);
-	font-weight: 500;
-	color: var(--text-color2);
-}
-
 .hero .btn-get-started {
 	margin-top: 30px;
 	height: 50px;
@@ -150,6 +139,8 @@ a{
 	color: var(--text-color);
 	background: var(--bg-color1);
 	border: 1px solid var(--text-color);
+	font-weight: var(--font-w-600);
+	font-size: var(--font-s-18);
 }
 
 .hero .btn-get-started:hover{
@@ -158,25 +149,13 @@ a{
 	border: none;
 }
 
-
-.hero .btn-get-started span {
-	font-weight: var(--font-w-600);
-	font-size: var(--font-s-18);
-	letter-spacing: 1px;
-}
-
 .hero .btn-get-started i {
 	margin-left: 5px;
-	font-size: 18px;
 	transition: 0.3s;
 }
 
 .hero .btn-get-started:hover i {
 	transform: translateX(5px);
-}
-
-.hero .hero-img {
-	text-align: right;
 }
 
 @media (min-width: 1024px) {
@@ -221,27 +200,6 @@ a{
 /* Hero */
 
 /* about */
-.about-us-section .text-head5{
-	font-size: var(--font-s-22);
-	font-weight: var(--font-w-700);
-	color: var(--text-color);
-}
-
-.about-us-section .text-head3{
-	font-size: 38px;
-	font-weight: var(--font-w-700);
-	color: var(--text-color);
-	line-height: 50px;
-	margin-top: 16px;
-	margin-bottom: 16px;
-}
-
-.about-us-section .text-para{
-	font-size: var(--font-s-16);
-	font-weight: var(--font-w-500);
-	color: var(--text-color2);
-	margin-bottom: 12px;
-}
 
 .about-us-section .box{
 	background-color: var(--bg-color1);
@@ -333,14 +291,6 @@ a{
     display: none;
 }
 
-.gallery-heading h2{
-	font-size: 24px;
-}
-
-.gallery-heading p{
-	font-size: 16px;
-}
-
 .card-img-top {
     object-fit: cover;
     height: 200px;
@@ -406,17 +356,6 @@ a{
 #blog{
 	padding: 100px 0;
 	overflow: hidden;
-}
-
-.blog-heading h2{
-	font-size: var(--font-s-24);
-	font-weight: var(--font-w-700);
-	margin-bottom: 20px;
-}
-
-.blog-heading p{
-	font-size: 16px;
-	margin-bottom: var(--font-s-20);
 }
 
 .recent-blog-posts .post-box {
@@ -485,7 +424,7 @@ a{
 /* Footer */
 .btn {
     padding: 10px 24px;
-    font-weight: 700;
+    font-weight: var(--font-w-700);
 }
 
 .btn-brand {
@@ -509,7 +448,7 @@ a{
     background-color: var(--bg-color1);
 	border-radius: 10px ;
 	border: 1px solid var(--text-color);
-    font-size: 24px;
+    font-size: var(--font-s-24);
 	text-decoration: none;
 }
 
